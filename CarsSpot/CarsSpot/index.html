@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Spot</title>
+    <link rel="shortcut icon" href="icon/icon.jpg">
+    <!-- ..................Custom Css Link................... -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ..................FontAwesome Link................... -->
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <!-- ..................swiper Js/Css Link................... -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ..................Jquery cdn................... -->
+    <script src="https://code.Jquery.com/jquery-3.5.1.min.js" integrity="sha-256-9/aliU8dGd2tbOSsuzixeV4y/faTqgFtohetphbbj0" crossorigin="anonymous"></script> 
+    <!-- ..................Sweet Alert CDN ................... -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+        <!-- ..................Start Navbar................... -->
+        <nav>
+            <div class="container nav-container">
+                <a href="" class="logo"><img src="icon/logo.png" width="220px" height="60px" alt="logo"></a>
+                <ul class="nav-link">           
+                    <li><a href="#galeria" style="--i:2;">Galeria zdjęć</a></li>
+                    <li><a href="#Faq" style="--i:3;">FaQ</a></li>            
+                </ul>
+                <ul class="social-link">
+                    <button id="click" class="btn" >Zadzwoń do nas</button>
+                    <script>
+                        $("#click").on("click",function(){
+                            Swal.fire("+48 132 435 534");
+                        })
+                    </script>
+                </ul>
+            </div>
+        </nav> 
+        <!-- ..................End Navbar................... -->
+
+        <!-- ..................Start Header Section................... -->
+        <header>
+            <div class="container header-container">
+                <div class="header-left">
+                    <h1>SPRZEDAJEMY  SAMOCHODY  Z EUROPY  </h1>
+                    <p class="pogr">
+                     Kup komfortowy pojazd aby każda podróż <br> była wyjątkowym przeżyciem<br>
+                    </p>
+                    <a href="#galeria" class="btn">Zobacz zdjęcia</a>
+                    <a href="#" class="btn-2">Zadzwoń do nas</a>
+                </div>
+                <div class="header-right">
+                    <div class="sq-box">
+                        <img src="./car.png" width="20000px" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sq-box2"></div>
+
+        </header>
+        <!-- ..................End - Header Section................... -->
+ 
+       <!-- ..................Start Section 1................... -->
+<section1>
+    <span id="galeria"></span>
+    <div class="page2">
+        <p class="blue">Prezentacja firmy</p>
+    <br>
+        <h2>ZOBACZ NASZĄ GALERIĘ ZDJĘĆ</h2>
+    <div class="car">
+        <button onclick="changeImage4(), changeImage5(), changeImage6()" class="btn3">Samochody osobowe</button>
+        <button onclick="changeImage1(), changeImage2(), changeImage3()" class="btn3" >Samochody dostawcze</button>
+    </div>
+    </div>
+        <container class="swiper">                    
+        <div class="slider-wrapper ">                                                  
+                <div class="card-list swiper-wrapper">                           
+                    
+                    <div class="card-item swiper-slide ">
+                       <img src="1.jpg" id="image1"   width="740px" height="500px" class="user-image" alt="">
+                    </div>                  
+                    <div class="card-item swiper-slide"> 
+                       <img src="2.jpg" id="image2" width="740px" height="500px" class="user-image" alt="">
+                    </div>             
+                    <div class="card-item swiper-slide">
+                       <img src="3.jpg" id="image3"  width="740px" height="500px" class="user-image" alt="">
+                    </div>          
+                </div>
+               <div class="swiper-pagination"></div>
+             <div class="swiper-button-prev"></div>
+           <div class="swiper-button-next"></div>          
+        </div>
+      </container>
+</section1>
+    <!-- ..................Section 1 - END................... -->
+
+    <!-- ..................Start Futter................... -->  
+    <footer class="footer">
+    
+    <div class="container4">
+        <div class="footer-col1">
+            <h5 class="nag">ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT  FUGIAT AUTE. VELIT NULLA COMMODO.</h5>
+             <p class="aka"> Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...] </p>
+            <ul>
+                <div class="container">
+                    <h2 class="toggle-title" onclick="toggleText()">Rozwiń &darr;</h2>
+                    <p id="hiddenText" class="hidden">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ips Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ips Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ips Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ips Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...] </p>
+                </div>
+            </ul>
+        </div>
+        <div class="footer-col1">
+            <h5 class="nag">ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT  FUGIAT AUTE. VELIT NULLA COMMODO.</h5>
+               <p class="aka"> Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...] </p>
+            <ul>
+                <div class="container">
+                    <h2 class="toggle-title2" onclick="toggleText2()">Rozwiń &darr;</h2>
+                    <p id="hiddenText2" class="hidden2">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ips Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ips Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ips </p>
+                </div>   
+            </ul>
+        </div>
+    </div>
+    <div class="kreska"></div>
+    <div class="odst" ></div>
+    </div>
+        <span id="Faq"></span>
+        <div class="container3">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Firma</h4>
+                    <ul>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Nasze usługi</a></li>
+                        <li><a href="#">Program partnerski</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FaQ</h4>
+                    <ul>
+                        <li><a href="#">Czas realizacji</a></li>
+                        <li><a href="#">Cena samochodu</a></li>
+                        <li><a href="#">Zwróć samochód</a></li>
+                        <li><a href="#">Sprawdź status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Zobacz również</h4>
+                    <ul>
+                        <li><a href="#">Serwis</a></li>
+                        <li><a href="#">Części</a></li>
+                        <li><a href="#">Wyceny</a></li>
+                        <li><a href="#">Wypożyczalnia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Obserwuj nas</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <!-- ..................Futter - END................... -->      
+       <script src="script.js"></script>
+</body>
+</html>
