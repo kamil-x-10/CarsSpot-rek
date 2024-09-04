@@ -1,1 +1,1 @@
-# CarsSpot-rek
+# CarsSpot - do rekrutacji
